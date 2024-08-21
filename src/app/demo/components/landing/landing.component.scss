@@ -1,0 +1,22 @@
+// Define un breakpoint pequeño (puedes ajustarlo según tus necesidades)
+$breakpoint-small: 640px;
+
+.hiddenSmall {
+  // Otros estilos que ya tengas...
+
+  // Ocultar en pantallas pequeñas
+  @media (max-width: #{$breakpoint-small}) {
+    display: none;
+  }
+}
+
+.logoSmall{
+  width: 100px;
+  height: auto;
+}
+
+imgPrincipal{
+  @media (max-width: #{$breakpoint-small}) {
+    height: 35rem !important;
+  }
+}

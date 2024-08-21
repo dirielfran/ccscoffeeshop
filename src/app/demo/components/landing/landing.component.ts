@@ -10,6 +10,7 @@ import { LayoutService } from 'src/app/layout/service/app.layout.service';
             }
         `,
     ],
+    styleUrls: ['./landing.component.scss']
 })
 export class LandingComponent {
     constructor(private layoutService: LayoutService) {}

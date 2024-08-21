@@ -2,7 +2,9 @@
     <div style="height: 68px; backdrop-filter: blur(17px);"
         class="flex justify-content-between align-items-center z-3 px-5 bg-black-alpha-40 top-0 w-full fixed">
         <div>
-            <img draggable="false" src="assets/layout/images/logo.png" alt="">
+            <div class="row">
+                <img draggable="false" src="assets/layout/images/LogoCcsWhite.png" alt="" class="logoSmall">
+            </div>
         </div>
   
         <a pRipple class="cursor-pointer block lg:hidden text-white" pStyleClass="@next" enterFromClass="hidden" leaveToClass="hidden" [hideOnOutsideClick]="true">
@@ -10,34 +12,34 @@
         </a>
         
         <div id="menu" class="align-items-center flex-grow-1 hidden lg:flex absolute lg:static w-full lg:px-0 z-3 shadow-2 lg:shadow-none fadein" style="top:68px; right: 0%;">
-            <ul class="list-none p-3 lg:p-0 m-0 ml-auto flex lg:align-items-center select-none flex-column lg:flex-row cursor-pointer surface-0 lg:bg-transparent">
+            <ul class="list-none p-3 lg:p-0 m-0 ml-auto flex lg:align-items-center select-none flex-column lg:flex-row cursor-pointer -50px lg:bg-transparent">
                 <li>
                     <a class="flex m-0 md:ml-5 px-0 py-3 text-900 line-height-3" pStyleClass="#menu" enterFromClass="hidden" leaveToClass="hidden">
-                        <span>HOME</span>
+                        <span>PASTELES</span>
                     </a>
                 </li>
                 <li>
                     <a class="flex m-0 md:ml-5 px-0 py-3 text-900 line-height-3" (click)="scrollToElement(features)" pStyleClass="#menu" enterFromClass="hidden" leaveToClass="hidden">
-                        <span>FEATURES</span>
+                        <span>CAFETERIA</span>
                     </a>
                 </li>
                 <li>
                     <a class="flex m-0 md:ml-5 px-0 py-3 text-900 line-height-3" (click)="scrollToElement(collaboration)" pStyleClass="#menu" enterFromClass="hidden" leaveToClass="hidden">
-                        <span>COLLABORATION</span>
+                        <span>DULCES</span>
                     </a>
                 </li>
                 <li>
                     <a class="flex m-0 md:ml-5 px-0 py-3 text-900 line-height-3" (click)="scrollToElement(events)" pStyleClass="#menu" enterFromClass="hidden" leaveToClass="hidden">
-                        <span>EVENTS</span>
+                        <span>BEBIDAS</span>
                     </a>
                 </li>
                 <li>
                     <a class="flex m-0 md:ml-5 px-0 py-3 text-900 line-height-3" (click)="scrollToElement(video)" pStyleClass="#menu" enterFromClass="hidden" leaveToClass="hidden">
-                        <span>VIDEO</span>
+                        <span>PANADERIA</span>
                     </a>
                 </li>
                 <li>
-                    <button pButton pRipple type="button" label="LET'S TRY" class="surface-900 text-0 m-0 mt-3 md:mt-0 md:ml-5" pStyleClass="#menu" enterFromClass="hidden" leaveToClass="hidden"></button>
+                    <button pButton pRipple type="button" label="Sing In" class="surface-900 text-0 m-0 mt-3 md:mt-0 md:ml-5" pStyleClass="#menu" enterFromClass="hidden" leaveToClass="hidden"></button>
                 </li>
             </ul>
         </div>
@@ -46,62 +48,46 @@
         <div  style="perspective: 101px;"
             class="h-screen overflow-x-hidden overflow-y-auto absolute top-0 left-0 right-0 bottom-0">
             <div   class="hidden lg:block absolute top-0 right-0 bottom-0 left-0  parallax__layer__0">
-                <img draggable="false" src="assets/layout/images/landing/unsplashs.jpg"
+                <img draggable="false" src="assets/layout/images/landing/coffee1.png"
                     class="w-full h-full block absolute bottom-0" />
             </div>
 
             <div class="hidden lg:flex absolute right-0 bottom-0 left-0 parallax__layer__3 justify-content-center"
                 style="top:27%">
                 <div>
-                    <h1 class="m-0 -mb-4 text-4xl text-white">LET'S</h1>
-                    <h1 class="m-0 text-white" style="font-size: 15rem">EXPLORE</h1>
+                    <h1 class="m-0 -mb-4 text-4xl text-white">VAMOS</h1>
+                    <h1 class="m-0 text-white" style="font-size: 15rem">EXPLOREMOS</h1>
                     <div class="flex -mt-4 justify-content-end">
-                        <h1 class="m-0 text-white text-4xl">TO ULTIMA</h1>
+                        <h1 class="m-0 text-white text-4xl">UN POCO</h1>
                     </div>
                 </div>
             </div>
 
-            <div class="absolute flex justify-content-center align-items-center w-full h-full parallax__layer__3" style="top:112px;">
-                    <button pButton label="GET STARTED"
+            <div class="absolute flex justify-content-center align-items-center w-full h-full parallax__layer__3 " style="top:112px;">
+                    <button pButton label="Comencemos"
                     (click)="scrollBehavior(parallax_body)"
                     style="backdrop-filter:blur(7px)"
-                    class="p-button-text text-900 bg-white-alpha-20 text-lg px-5 py-3 font-semibold hover:bg-white hover:text-0 border-round-xl border-white-alpha-30 border-1"></button>
+                    class="p-button-text text-900 bg-white-alpha-20 text-lg px-5 py-3 font-semibold hover:bg-white hover:text-0 border-round-xl border-white-alpha-30 border-1 hiddenSmall"></button>
             </div>
 
-            <div class="block lg:hidden h-28rem bg-center bg-no-repeat bg-cover"
-                style="top: 68px; background:url(assets/layout/images/landing/unsplashs.jpg)">
+            <div class="block lg:hidden h-28rem bg-center bg-no-repeat bg-cover imgPrincipal"
+                style="top: 68px; height: 35rem !important; background:url(assets/layout/images/landing/coffee1.png)">
                 <div class="flex justify-content-center align-items-center h-full">
                     <div class="flex flex-column">
-                        <h1 class="m-0 text-base text-white">LET'S</h1>
-                        <h1 class="m-0 text-white">EXPLORE</h1>
+                        <h1 class="m-0 text-base text-white">VAMOS</h1>
+                        <h1 class="m-0 text-white">EXPLOREMOS</h1>
                         <div class="flex justify-content-end">
-                            <h1 class="m-0 text-white text-sm">TO ULTIMA</h1>
+                            <h1 class="m-0 text-white text-sm">UN POCO</h1>
                         </div>
                         <div class="flex justify-content-center mt-2">
-                            <button pButton label="GET STARTED" (click)="scrollBehavior(parallax_body)" style="backdrop-filter:blur(7px)" class="p-button-text text-900 text-xs bg-white-alpha-20 font-semibold hover:bg-white hover:text-0 border-white-alpha-30 border-1"></button>
+                            <button pButton label="Comencemos" (click)="scrollBehavior(parallax_body)" style="backdrop-filter:blur(7px)" class="p-button-text text-900 text-xs bg-white-alpha-20 font-semibold hover:bg-white hover:text-0 border-white-alpha-30 border-1"></button>
                         </div>
                     </div>
                 </div>
             </div>
 
             <div #parallax_body class="lg:top-100 block absolute left-0 right-0 h-full z-2">
-                <div>
-                    <div class="grid grid-nogutter p-2 lg:p-5" style="background-color: #000;">
-                        <div class="col-6 lg:col-3 flex align-items-center justify-content-center gap-3">
-                            <img draggable="false" src="assets/layout/images/landing/landing-logo1.png" alt="">
-                        </div>
-                        <div class="col-6 lg:col-3 flex align-items-center justify-content-center gap-3">
-                            <img draggable="false" src="assets/layout/images/landing/landing-logo2.png" alt="">
-                        </div>
-                        <div class="col-6 lg:col-3 flex align-items-center justify-content-center gap-3">
-                            <img draggable="false" src="assets/layout/images/landing/landing-logo3.png" alt="">
-                        </div>
-                        <div class="col-6 lg:col-3 flex align-items-center justify-content-center gap-3">
-                            <img draggable="false" src="assets/layout/images/landing/landing-logo4.png" alt="">
-                        </div>
-                    </div>
-                </div>
-                <div class="pt-5" style="background-color: #000;">
+                <div class="pt-5" style="background-color: #bba288;">
                     <div #features class="flex flex-column align-items-center gap-3">
                         <div class="surface-500 text-white text-sm p-2 border-round-lg">FEATURES</div>
                         <span class="text-white text-2xl uppercase">All you need is the Ultima.</span>
